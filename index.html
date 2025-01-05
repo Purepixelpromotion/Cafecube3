@@ -3,76 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caffe Cube 3 - Genuss in Perfektion</title>
+    <title>Speisekarte - Caffe Cube 3</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero-Bereich -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Willkommen im Caffe Cube 3</h1>
-            <p>Erleben Sie einzigartige Kaffeespezialitäten und frische Gerichte in einer stilvollen Atmosphäre.</p>
-            <a href="#menu" class="btn-primary">Unsere Speisekarte</a>
-        </div>
+    <header class="header">
+        <h1>Caffe Cube 3</h1>
+        <p>Entdecken Sie unsere köstlichen Speisen und Getränke</p>
     </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">Über Uns</a></li>
-            <li><a href="#menu">Speisekarte</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <!-- Über Uns -->
-    <section id="about" class="section about">
-        <div class="content">
-            <h2>Über Uns</h2>
-            <p>Im Caffe Cube 3 erwarten Sie handverlesene Zutaten, köstliche Kaffeespezialitäten und eine Atmosphäre, die zum Entspannen einlädt.</p>
-        </div>
-        <div class="image">
-            <img src="images/cafe-interior.jpg" alt="Caffe Cube 3 Innenansicht">
-        </div>
-    </section>
-
-    <!-- Speisekarte -->
-    <section id="menu" class="section menu">
-        <h2>Unsere Speisekarte</h2>
-        <p>Genießen Sie unsere sorgfältig zubereiteten Gerichte und erfrischenden Getränke.</p>
-        <div class="menu-categories">
-            <!-- Frühstück -->
-            <div class="menu-category">
-                <h3>Frühstück</h3>
-                <ul>
-                    <li><span>Croissant mit Butter</span><span>4,50 €</span></li>
-                    <li><span>Avocado-Toast</span><span>7,50 €</span></li>
-                    <li><span>Rührei mit Kräutern</span><span>6,00 €</span></li>
-                </ul>
+    <main class="menu">
+        <!-- Frühstück -->
+        <section class="menu-category">
+            <div class="category-header">
+                <img src="images/breakfast.jpg" alt="Frühstück" class="category-image">
+                <h2>Frühstück</h2>
             </div>
-            <!-- Desserts -->
-            <div class="menu-category">
-                <h3>Desserts</h3>
-                <ul>
-                    <li><span>Tiramisu</span><span>4,50 €</span></li>
-                    <li><span>Schokoladenkuchen</span><span>5,00 €</span></li>
-                    <li><span>Frischer Obstsalat</span><span>3,50 €</span></li>
-                </ul>
+            <ul>
+                <li>
+                    <span class="menu-item-name">Croissant mit Butter und Marmelade</span>
+                    <span class="menu-item-price">4,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Avocado-Toast mit Ei</span>
+                    <span class="menu-item-price">7,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Rührei mit Kräutern</span>
+                    <span class="menu-item-price">6,00 €</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Mittagessen -->
+        <section class="menu-category">
+            <div class="category-header">
+                <img src="images/lunch.jpg" alt="Mittagessen" class="category-image">
+                <h2>Mittagessen</h2>
             </div>
-        </div>
-    </section>
+            <ul>
+                <li>
+                    <span class="menu-item-name">Caesar Salad mit Hähnchen</span>
+                    <span class="menu-item-price">12,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Tagessuppe</span>
+                    <span class="menu-item-price">5,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Pasta mit Tomatensoße</span>
+                    <span class="menu-item-price">10,00 €</span>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Kontakt -->
-    <section id="contact" class="section contact">
-        <h2>Kontakt</h2>
-        <p>📍 Musterstraße 12, 12345 Musterstadt</p>
-        <p>📞 +49 123 456789</p>
-        <p>📧 info@caffe-cube-3.de</p>
-        <a href="mailto:info@caffe-cube-3.de" class="btn-secondary">Kontaktieren Sie uns</a>
-    </section>
+        <!-- Desserts -->
+        <section class="menu-category">
+            <div class="category-header">
+                <img src="images/desserts.jpg" alt="Desserts" class="category-image">
+                <h2>Desserts</h2>
+            </div>
+            <ul>
+                <li>
+                    <span class="menu-item-name">Hausgemachtes Tiramisu</span>
+                    <span class="menu-item-price">4,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Schokoladenkuchen mit Sahne</span>
+                    <span class="menu-item-price">5,00 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Frischer Obstsalat</span>
+                    <span class="menu-item-price">3,50 €</span>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Footer -->
+        <!-- Getränke -->
+        <section class="menu-category">
+            <div class="category-header">
+                <img src="images/drinks.jpg" alt="Getränke" class="category-image">
+                <h2>Getränke</h2>
+            </div>
+            <ul>
+                <li>
+                    <span class="menu-item-name">Espresso</span>
+                    <span class="menu-item-price">2,50 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Cappuccino</span>
+                    <span class="menu-item-price">3,00 €</span>
+                </li>
+                <li>
+                    <span class="menu-item-name">Frisch gepresster Orangensaft</span>
+                    <span class="menu-item-price">4,00 €</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
     <footer class="footer">
         <p>© 2025 Caffe Cube 3. Genuss in Perfektion.</p>
     </footer>
