@@ -1,0 +1,153 @@
+/* Allgemein */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #eaeaea; /* Leicht dunkler Hintergrund */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d4a373; /* Goldener Akzent */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero-Bereich */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Leichte Abdunkelung */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #d4a373;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b3875a;
+}
+
+/* Navigation */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #d4a373;
+}
+
+/* Sektionen */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-category {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: left;
+}
+
+.menu-category h3 {
+    border-bottom: 2px solid #d4a373;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu-category ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-category li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-category li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
